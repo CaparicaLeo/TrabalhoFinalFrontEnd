@@ -1,0 +1,11 @@
+body {
+	font-family: "Lato", sans-serif;
+}
+
+h1, h2, a, p {
+	font-family: "Cinzel", serif;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
