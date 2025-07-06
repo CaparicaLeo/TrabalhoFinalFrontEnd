@@ -1,8 +1,12 @@
-* {
-	margin: 0;
-	padding: 0;
+html {
 	box-sizing: border-box;
 }
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
 body {
 	font-family: "Cinzel", sans-serif;
 	background-color: #2b0404;
@@ -11,52 +15,85 @@ header nav {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
+    header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2b0404;
+    padding: 1rem 0;
 }
+
+}
+header nav img {
+    height: 80px; /* ajuste conforme necessário */
+    margin: 0.5rem 1rem;
+}
+
 nav ul {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 5rem;
+	gap: 2rem;
 	padding-right: 4rem;
 }
+
 nav li {
-	list-style-type: none;
-	border-style: solid;
-	border-color: white;
-	border-radius: 5px;
-	padding: 1rem;
+	border: 2px solid white;
+    border-radius: 1em;
+	transition: background-color 0.3s ease;
+    list-style-type: none;
+    padding: .5em;
+}
+nav li:hover {
+	background-color: #b31010;
+    cursor: pointer;
+    
 }
 nav li a {
 	text-decoration: none;
 	color: white;
 }
+
 main{
     display: flex;
     flex-direction: column;
 }
+
 #sobre {
 	background-image: url("assets/Fundo.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	height: 100vh; /* ou o tamanho que quiser */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white; /* opcional, para melhor contraste com o fundo */
-	text-align: center;
-	padding: 2rem;
+	background-position: center fixed;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	align-items: center;
+	color: white;
+	text-align: center;
+	padding: 2rem;
 }
+
 #descricao {
 	background-color: #2b0404;
 	padding: 2rem;
 	border-radius: 1rem;
+    margin-top: 2rem;
+}
+.legenda{
+    text-align: center;
+    color: #fff;
+    background-color: #510808;
+    width: 88%;
+    padding: 2rem;
+    align-self: center;
+    border-radius: 1rem;
+    margin-top: 2rem;
 }
 
 #personagens {
+    text-align: center;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
@@ -72,6 +109,12 @@ main{
 	width: 100%;
 	max-width: 300px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.container, .container-2 {
+    transition: transform 0.3s ease;
+}
+.container:hover, .container-2:hover {
+    transform: scale(1.05);
 }
 #jogabilidade {
 	background-color: #510808;
@@ -130,6 +173,11 @@ main{
     color:white;
     border-width: 5px;
     border-radius: 1em;
+    transition: transform 0.3s ;
+}
+#cta button:hover{
+    background-color: #b31010;
+    transform: scale(1.05) ;
 }
 
 #formulario{
@@ -156,12 +204,17 @@ main{
     padding: 1em;
     color: #fff;
     border-radius: 1em;
+    font-family: "Cinzel";
+    transition: transform 0.3s ;
+}
+#formulario form button:hover{
+    background-color: #b31010;
+    transform: scale(1.05) ;
 }
 
 footer{
     background-color: #000;
     color: #262525;
     text-align: center;
-    padding: 5rem;
+    padding: 2rem;
 }
-
