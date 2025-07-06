@@ -1,11 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-	font-family: "Lato", sans-serif;
+	font-family: "Cinzel", sans-serif;
+	background-color: #2b0404;
+}
+header nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5rem;
+	padding-right: 4rem;
+}
+nav li {
+	list-style-type: none;
+	border-style: solid;
+	border-color: white;
+	border-radius: 5px;
+	padding: 1rem;
+}
+nav li a {
+	text-decoration: none;
+	color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+#sobre {
+	background-image: url("assets/Fundo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh; /* ou o tamanho que quiser */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white; /* opcional, para melhor contraste com o fundo */
+	text-align: center;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+#descricao {
+	background-color: #2b0404;
+	padding: 2rem;
+	border-radius: 1rem;
 }
 
-h1, h2, a, p {
-	font-family: "Cinzel", serif;
+#personagens {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	padding: 2rem;
+	justify-items: center;
 }
-header nav{
+.container {
+	background-color: #fff;
+
+	padding: 1rem;
+	border-radius: 10px;
+	text-align: center;
+	width: 100%;
+	max-width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#jogabilidade {
+	background-color: #510808;
+	color: #fff;
+	margin: 3rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 1em;
+	border-radius: 1rem;
+	padding: 2rem;
+}
+#jogabilidade ul li {
+	list-style-type: none;
+}
+
+#depoimentos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	padding: 2rem;
+    margin: 2.5rem;
+	justify-items: center;
+}
+.container-2{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.marcacao{
+    padding-bottom: 10px;
+    border-bottom: #000 1px solid;
+}
+.depoimento{
+    padding-top: 1rem;
+}
+
+#cta{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+    align-items: center;
 }
+#cta h1{
+    padding-bottom: 2rem;
+    color: #fff;
+}
+#cta button{
+    width: 40%;
+    background-color: #510808;
+    padding: 3rem;
+    font-size: 3rem;
+    font-family: "Cinzel";
+    color:white;
+    border-width: 5px;
+    border-radius: 1em;
+}
+
+#formulario{
+    background-color: #510808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 1em;
+    color:white;
+    margin-bottom: 3rem;
+}
+#formulario form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#formulario form button{
+    background-color: #2b0404;
+    padding: 1em;
+    color: #fff;
+    border-radius: 1em;
+}
+
+footer{
+    background-color: #000;
+    color: #262525;
+    text-align: center;
+    padding: 5rem;
+}
+
