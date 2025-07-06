@@ -135,8 +135,8 @@
 					<h1>"Minha Primeira Jogatina!"</h1>
 					<p class="marcacao"><strong>@r_caparica</strong></p>
 					<p class="depoimento">
-						Nunca joguei muitos jogos, mas quando chegaram com ele e começamos a jogar... 
-						Não consegui parar de jogar!!
+						Nunca joguei muitos jogos, mas quando chegaram com ele e
+						começamos a jogar... Não consegui parar de jogar!!
 					</p>
 				</section>
 			</section>
@@ -147,15 +147,33 @@
 			</section>
 
 			<section id="formulario">
-				<h1>Duvidas? Nos envie um email!</h1>
-				<form action="#">
-					<input type="text" id="nome" placeholder="Seu nome" required />
-					<input type="email" id="email" placeholder="Seu e-mail" required/>
-					<textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+				<h1>Dúvidas? Nos envie um email!</h1>
+				<form id="formulario-contato">
+					<input
+						type="text"
+						id="nome"
+						name="nome"
+						placeholder="Seu nome"
+						required
+					/>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Seu e-mail"
+						required
+					/>
+					<textarea
+						id="mensagem"
+						name="mensagem"
+						placeholder="Sua mensagem"
+						required
+					></textarea>
 					<button type="submit">Enviar</button>
 				</form>
-				<p id="feedback" style="margin-top: 1rem;"></p>
 			</section>
+
+			<script src="index.js"></script>
 		</main>
 
 		<footer>
@@ -164,7 +182,5 @@
 				reservados.
 			</p>
 		</footer>
-
-		<script src="script.js"></script>
 	</body>
 </html>
